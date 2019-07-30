@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp">
+
+    <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/seekBar"/>
+    <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:id="@+id/progressBar"
+    />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]"
+            android:id="@+id/imageView"/>
+    <EditText
+            android:id="@+id/url"
+            android:inputType="textUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:text="GO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/go"/>
+    <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
